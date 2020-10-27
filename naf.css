@@ -1,0 +1,42 @@
+.grid-area1 {
+  grid-area: header;
+}
+.grid-area2 {
+  grid-area: side menu;
+}
+.grid-area3 {
+  grid-area: main;
+}
+.grid-area4 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid:
+    "header header header header"
+    "menu main main main"
+    "menu main main main"
+    "footer footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 13px;
+  font-size: 15px;
+  color: whitesmoke;
+}
