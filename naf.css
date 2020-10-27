@@ -2,12 +2,15 @@
   grid-area: header;
 }
 .grid-area2 {
-  grid-area: side menu;
+  grid-area: side-menu;
 }
 .grid-area3 {
   grid-area: main;
 }
 .grid-area4 {
+  grid-area: cards;
+}
+.grid-area5 {
   grid-area: footer;
 }
 
@@ -15,16 +18,16 @@
   display: grid;
   grid:
     "header header header header"
-    "menu main main main"
-    "menu main main main"
+    "side-menu main main main"
+    "side-menu main main main"
+    "side-menu cards cards cards"
     "footer footer footer footer";
   grid-gap: 10px;
-  padding: 10px;
 }
 
-.grid-container > {
+.grid-container > div {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .topnav {
@@ -36,7 +39,13 @@
   float: right;
   text-align: center;
   text-decoration: none;
-  padding: 13px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 17px;
   color: whitesmoke;
+}
+
+.footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
 }
