@@ -30,6 +30,13 @@
   padding: 10px 0;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+
 .topnav {
   overflow: hidden;
   background-color: black;
@@ -42,6 +49,11 @@
   padding: 15px;
   font-size: 17px;
   color: whitesmoke;
+}
+
+.cards img {
+  margin: 0 auto;
+  height: 150px;
 }
 
 .footer {
