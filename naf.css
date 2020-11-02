@@ -1,14 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+.v-header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(155, 155, 155);
+  z-index: 1;
+  opacity: 0.35;
+}
+
 .grid-area1 {
   grid-area: header;
+  z-index: 2;
 }
-.grid-area2 {
-  grid-area: side-menu;
-}
+
 .grid-area3 {
   grid-area: main;
+  z-index: 2;
 }
 .grid-area4 {
   grid-area: cards;
+  z-index: 2;
 }
 .grid-area5 {
   grid-area: footer;
@@ -18,11 +59,11 @@
   display: grid;
   grid:
     "header header header header"
-    "side-menu main main main"
-    "side-menu main main main"
-    "side-menu cards cards cards"
+    "main main main main"
+    "main main main main"
+    "cards cards cards cards"
     "footer footer footer footer";
-  grid-gap: 10px;
+  grid-gap: 160px;
 }
 
 .grid-container > div {
@@ -30,6 +71,9 @@
   padding: 10px 0;
 }
 
+h1 {
+  font-size: 50px;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,7 +86,24 @@
   background-color: black;
 }
 
-.topnav a {
+.topnav-left {
+  margin: 0 0 0 30px;
+}
+
+.topnav-right {
+  margin: 0 20px;
+}
+
+.topnav .topnav-left a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 17px;
+  color: whitesmoke;
+}
+
+.topnav .topnav-right a {
   float: right;
   text-align: center;
   text-decoration: none;
@@ -53,11 +114,12 @@
 
 .cards img {
   margin: 0 auto;
-  height: 150px;
+  height: 100px;
 }
 
 .footer {
   padding: 20px;
+  height: 10vh;
   background-color: black;
   color: white;
 }
