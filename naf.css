@@ -2,10 +2,22 @@
   box-sizing: border-box;
 }
 
+main {
+  color: white;
+}
+
+main p {
+  font-size: 20px;
+}
+
 body {
   margin: auto;
   line-height: 1.5;
   overflow-x: hidden;
+}
+.column {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .v-header {
   height: 90vh;
@@ -47,6 +59,7 @@ body {
   grid-area: main;
   z-index: 2;
 }
+
 .grid-area4 {
   grid-area: cards;
   z-index: 2;
@@ -60,25 +73,25 @@ body {
   grid:
     "header header header header"
     "main main main main"
-    "main main main main"
     "cards cards cards cards"
     "footer footer footer footer";
-  grid-gap: 160px;
+  grid-gap: 110px;
 }
 
 .grid-container > div {
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-column-gap: 1rem;
 }
 
 .topnav {
@@ -113,13 +126,34 @@ h1 {
 }
 
 .cards img {
-  margin: 0 auto;
-  height: 100px;
+  margin: auto;
+  height: 175px;
+}
+
+.cards div {
+  border: 2px solid;
+  margin: 0 40px 0 40px;
+  background: white;
+  box-shadow: 5px 5px 5px;
+  border-radius: 80px 20px;
+}
+
+.cards h1 {
+  background-color: rgb(48, 72, 207);
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 77px;
+  border-top: 1px solid;
+}
+
+.cards div:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .footer {
-  padding: 20px;
+  padding: 40px 0 0 20px;
   height: 10vh;
   background-color: black;
   color: white;
+  text-align: center;
 }
