@@ -15,6 +15,22 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+
+.title-heading {
+  position: absolute;
+  font-size: 7rem;
+  top: 15%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: rgb(48, 72, 207);
+  text-shadow: 1px 1px 1px #ffffff, 1px 2px 1px #ffffff, 1px 3px 1px #000000,
+    1px 4px 1px #000000, 1px 5px 1px #000000, 1px 6px 1px #000000,
+    1px 7px 1px #000000, 1px 8px 1px #000000, 1px 9px 1px #000000,
+    1px 5px 1px #ffffff, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
 .column {
   margin-left: 25px;
   margin-right: 25px;
