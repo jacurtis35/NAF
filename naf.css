@@ -47,10 +47,10 @@ body {
 
 .fullscreen-video-wrap {
   position: absolute;
-  top: 0;
+  top: 4vh;
   left: 0;
   width: 100%;
-  height: 90vh;
+  height: 91vh;
   overflow: hidden;
 }
 
@@ -60,40 +60,29 @@ body {
 }
 
 .header-overlay {
-  height: 90vh;
+  height: 90.5vh;
   width: 100vw;
   position: absolute;
-  top: 0;
+  top: 4.5vh;
   left: 0;
   background: #9b9b9b;
   z-index: 1;
   opacity: 0.35;
 }
 
-.grid-area1 {
-  grid-area: header;
-  z-index: 2;
-}
-
 .grid-area3 {
-  grid-area: main;
   z-index: 2;
 }
 
 .grid-area4 {
-  grid-area: cards;
   z-index: 2;
-}
-
-.grid-area5 {
-  grid-area: footer;
 }
 
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid: "header header header header" "main main main main" "cards cards cards cards" "footer footer footer footer";
-  grid-gap: 110px;
+  -ms-grid-columns: (min-max(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, min-max(240px, 1fr));
 }
 
 .grid-container > div {
@@ -112,12 +101,18 @@ h1 {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-column-gap: 1rem;
+  grid-column-gap: 1vw;
 }
 
 .topnav {
+  height: 5vh;
   overflow: hidden;
   background-color: black;
+  z-index: 2;
+}
+
+.topnav a:hover {
+  cursor: pointer;
 }
 
 .topnav-left {
@@ -132,18 +127,26 @@ h1 {
   float: left;
   text-align: center;
   text-decoration: none;
-  padding: 15px;
+  padding: 11px;
   font-size: 17px;
   color: whitesmoke;
+}
+
+.topnav .topnav-left a:hover {
+  color: yellow;
 }
 
 .topnav .topnav-right a {
   float: right;
   text-align: center;
   text-decoration: none;
-  padding: 15px;
+  padding: 11px;
   font-size: 17px;
   color: whitesmoke;
+}
+
+.topnav .topnav-right a:hover {
+  color: yellow;
 }
 
 .cards img {
@@ -175,10 +178,21 @@ h1 {
 }
 
 .footer {
-  padding: 40px 0 0 20px;
-  height: 10vh;
+  padding: 15px 0 0 20px;
+  height: 5vh;
   background-color: black;
   color: white;
   text-align: center;
+  z-index: 2;
+}
+
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: yellow;
 }
 /*# sourceMappingURL=naf.css.map */
