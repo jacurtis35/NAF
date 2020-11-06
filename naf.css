@@ -30,11 +30,6 @@ body {
   text-shadow: 1px 1px 1px #ffffff, 1px 2px 1px #ffffff, 1px 3px 1px #000000, 1px 4px 1px #000000, 1px 5px 1px #000000, 1px 6px 1px #000000, 1px 7px 1px #000000, 1px 8px 1px #000000, 1px 9px 1px #000000, 1px 5px 1px #ffffff, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
-.column {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .v-header {
   height: 90vh;
   display: -webkit-box;
@@ -101,11 +96,10 @@ h1 {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-column-gap: 1vw;
+  grid-column-gap: 0.5vw;
 }
 
 .topnav {
-  height: 5vh;
   overflow: hidden;
   background-color: black;
   z-index: 2;
@@ -179,7 +173,7 @@ h1 {
 
 .footer {
   padding: 15px 0 0 20px;
-  height: 5vh;
+  height: 6vh;
   background-color: black;
   color: white;
   text-align: center;
