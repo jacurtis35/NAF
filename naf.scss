@@ -183,9 +183,9 @@ h1 {
   color: yellow;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 280px) and (max-width: 375px) {
   .topnav {
-    padding-right: 1em;
+    display: flex;
   }
   .topnav .topnav-left a {
     font-size: 10px;
@@ -208,7 +208,7 @@ h1 {
   }
   .title-heading {
     font-size: 50px;
-    margin: 30px 30px 5px 0;
+    margin: 100px 30px 5px 0;
     padding-left: 60px;
   }
   main p {
@@ -218,7 +218,6 @@ h1 {
     padding-left: 9px;
     padding-right: 30px;
   }
-
   .cards {
     grid-template-columns: repeat(1, 80vw);
     grid-gap: 5vh;
@@ -228,17 +227,17 @@ h1 {
     padding: 20px;
   }
   .card h1 {
-    font-size: 30px;
-    border-bottom-right-radius: 50px;
+    font-size: 20px;
+    border-bottom-right-radius: 23px;
     padding: 10px;
   }
   .cards div {
-    border-top-left-radius: 50px;
+    border-radius: 24px;
   }
 
   .footer {
     position: relative;
-    margin-top: 33em;
+    margin-top: 45em;
     height: 6vh;
   }
   .footer p {
@@ -360,7 +359,6 @@ h1 {
   }
   .footer {
     position: relative;
-
     height: 8vh;
   }
   .footer p {
