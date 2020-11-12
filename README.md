@@ -11,4 +11,4 @@ Discussions is a place to go for users to talk to about game related topics
 ## Walkthroughs
 Walkthroughs is  place where gamers can go to look up or post guides on games
 
-https://github.com/jacurtis35/NAF/blob/main/images/naf-snip.PNG
+
